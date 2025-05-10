@@ -1,0 +1,53 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doctor Dashboard</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="DoctoerDashboardCss.jsp">
+</head>
+<body class="body-background">
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="records-header">
+      <h2 class="section-title">Patient Records</h2>
+      <button class="btn btn-primary">
+        <i class="fas fa-plus"></i>Create New Record
+      </button>
+    </div>
+
+    <div class="table-container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Condition</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Jane Doe</td>
+            <td>Flu</td>
+            <td class="action-buttons">
+              <button class="btn btn-edit" title="Edit">
+                <i class="fas fa-edit"></i>Edit
+              </button>
+              <button class="btn btn-delete" title="Delete">
+                <i class="fas fa-trash-alt"></i>Delete
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+</body>
+</html>

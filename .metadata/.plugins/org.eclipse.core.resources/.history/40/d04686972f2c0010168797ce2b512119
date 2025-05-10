@@ -1,0 +1,87 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doctor Dashboard</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .bg-cherry-red { background-color: #c21807; }
+    .hover\:bg-cherry-red-dark:hover { background-color: #a40f06; }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Sidebar -->
+  <div class="flex min-h-screen">
+    <aside class="w-64 bg-cherry-red text-white flex-shrink-0">
+      <div class="p-6 text-lg font-bold">Doctor Panel</div>
+      <nav class="px-4 space-y-2">
+        <a href="#" class="block py-2 px-4 rounded hover:bg-cherry-red-dark"><i class="fas fa-home mr-2"></i>Home</a>
+        <a href="#" class="block py-2 px-4 rounded hover:bg-cherry-red-dark"><i class="fas fa-tachometer-alt mr-2"></i>Dashboard</a>
+        <a href="#" class="block py-2 px-4 rounded hover:bg-cherry-red-dark"><i class="fas fa-user-md mr-2"></i>Patients</a>
+        <a href="#" class="block py-2 px-4 rounded hover:bg-cherry-red-dark"><i class="fas fa-calendar-alt mr-2"></i>Appointments</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="flex-1 flex flex-col">
+      
+      <!-- Top Bar -->
+      <header class="bg-white shadow p-4 flex justify-between items-center">
+        <div class="text-xl font-semibold">Dashboard</div>
+        <div class="flex items-center space-x-4">
+          <span class="text-gray-600">Dr. John Smith</span>
+          <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">
+            <i class="fas fa-sign-out-alt mr-1"></i>Logout
+          </button>
+        </div>
+      </header>
+
+      <!-- Table Section -->
+      <main class="p-6 bg-gray-100 flex-1">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-2xl font-bold">Patient Records</h2>
+          <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+            <i class="fas fa-plus mr-2"></i>Create New Record
+          </button>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="min-w-full bg-white shadow-md rounded">
+            <thead class="bg-gray-200 text-gray-600">
+              <tr>
+                <th class="py-2 px-4 text-left">ID</th>
+                <th class="py-2 px-4 text-left">Name</th>
+                <th class="py-2 px-4 text-left">Condition</th>
+                <th class="py-2 px-4 text-left">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-t">
+                <td class="py-2 px-4">1</td>
+                <td class="py-2 px-4">Jane Doe</td>
+                <td class="py-2 px-4">Flu</td>
+                <td class="py-2 px-4 space-x-2">
+                 
+                </td>
+              </tr>
+              <!-- More rows as needed -->
+            </tbody>
+          </table>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-700 " title="Edit">
+                    <i class="fas fa-sign-out-alt mr-1"></i>Edit
+           </button>
+           <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-700" title="Delete">
+                    <i class="fas fa-edit"></i>Delete
+           </button>
+        </div>
+      </main>
+    </div>
+  </div>
+
+</body>
+</html>
+

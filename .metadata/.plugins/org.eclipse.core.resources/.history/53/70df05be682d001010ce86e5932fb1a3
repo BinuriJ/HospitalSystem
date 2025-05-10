@@ -1,0 +1,63 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ include file="DocterDashboardstyles.jsp" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor Dashboard</title>
+    <style>
+    	<jsp:include page="footerCss.jsp" />
+    </style>
+</head>
+<body>
+
+<jsp:include page="header.jsp" />
+
+<div class="top-bar">
+    <div><strong>Doctor Dashboard</strong></div>
+    <div>
+        <span>Dr. John Smith</span>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="container">
+    <div class="header">
+        <h2>Patient Records</h2>
+        <button class="btn btn-create">Create New Record</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Illness</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Jane Doe</td>
+                <td>Flu</td>
+                <td>
+                    <div class="actions">
+                    	<br>
+                        <button class="btn btn-edit">Edit</button>
+                        <button class="btn btn-delete">Delete</button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+ 
+<jsp:include page="footer.jsp" />
+
+</body>
+</html>

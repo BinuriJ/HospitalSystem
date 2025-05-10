@@ -1,0 +1,47 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ include file="homeCss.jsp" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Home - CyborgSys</title>
+    <style>
+    	<jsp:include page="footerCss.jsp" />
+    	
+    	body {
+		    background-image: url('images/image1-home.jpg');
+		    background-size: cover;
+		    background-position: center;
+		    background-repeat: no-repeat;
+		}
+    </style>
+    
+</head>
+<body>
+
+<div class="main-container">
+    <header>
+        <h1>CyborgSys</h1>
+        <h3>making it easy to heal yourself.</h3>
+        <p>
+            Cyborg-Sys is a modern Online Hospital Management System designed to bridge the gap between traditional
+            healthcare operations and today’s digital world. Cyborg-Sys is revolutionizing the healthcare experience
+            for both providers and patients. We ensure that quality care is an easy product.
+        </p>
+    </header>
+
+    <div class="button-container">
+        <button class="role-btn">Patient</button>
+        <button class="role-btn">Doctor</button>
+        <button class="role-btn">Nurse</button>
+        <button class="role-btn">Pharmacist</button>
+    </div>
+    
+</div>
+
+
+    <jsp:include page="footer.jsp" />
+
+</body>
+</html>

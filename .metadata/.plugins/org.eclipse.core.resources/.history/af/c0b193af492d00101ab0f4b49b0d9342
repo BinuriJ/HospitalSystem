@@ -1,0 +1,42 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ include file="doctorLoginCss.jsp" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor Login</title>
+    <style>
+ 		 html, body {
+            margin: 0;
+            height: 100%;
+        }
+
+        body {
+            background-image: url("images/image1-home.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    	<jsp:include page="footerCss.jsp" />
+    </style>
+</head>
+<body>
+
+<div class="top-bar">
+    <div><strong>CyborgeSys</strong></div>
+</div>
+
+<div class="login-container">
+    <h2>Doctor Login</h2>
+    <form action="DoctorDashboard.jsp" method="post">
+        <input type="text" name="username" placeholder="Username" required class="input-field" />
+        <input type="password" name="password" placeholder="Password" required class="input-field" />
+        <button type="submit" class="login-btn">Login</button>
+    </form>
+</div>
+
+<jsp:include page="footer.jsp" />
+
+</body>
+</html>
