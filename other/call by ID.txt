@@ -1,0 +1,38 @@
+//catch prescripId data as array
+	public static List <DoctorModel>  getById (int PrescripId){
+		
+		int pid = PrescripId;
+		
+		//new array list
+		ArrayList <DoctorModel> doc= new ArrayList <>();
+		
+		//data insertion	
+				try {
+					//DB connection call
+					con=DBConnection.getConnection();
+					stm=con.createStatement();
+					
+					//SQL query -select all from table based on prescripId
+					String sql = "select * from prescriptions where prescripId '"+pid+"'";
+
+					rs = stm.executeQuery(sql);
+					
+					while (rs.next()) {//data type column_name = ....... (column_no)
+						int prescripId = rs.getInt (1);
+						String patientName =  rs.getString(2);
+						String prCondition =  rs.getString(3);
+						String prMedicine =  rs.getString(4);
+						int prFrequency = rs.getInt (5);
+						String prInstructions =  rs.getString(6);
+						
+						
+						//create object and call
+						DoctorModel dm = new DoctorModel(prescripId,patientName,prCondition,prMedicine,prFrequency,prInstructions);
+						doc.add(dm);
+					}
+					
+																												
+				}catch (Exception e) {
+					e.printStackTrace();
+				}
+				return doc;

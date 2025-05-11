@@ -4,18 +4,21 @@
 	<section name="java.lang.Class">
 		<item key="replaceBarOpen" value="false"/>
 		<list key="findhistory">
+			<item value="window.location"/>
+			<item value="GetAllS"/>
+			<item value="form"/>
+			<item value="submitRecord"/>
+			<item value="allPresc"/>
+			<item value="InsertServ"/>
+			<item value=" pid"/>
+			<item value="action=&quot;submitRecord.jsp&quot;"/>
+			<item value="Header"/>
+			<item value="pid"/>
+			<item value="String sql = &quot;SELECT * FROM prescriptions WHERE prescripId = &apos;&quot; + pid + &quot;&apos;&quot;;"/>
+			<item value="pres"/>
+			<item value="&lt;form action=&quot;submitRecord.jsp&quot; method=&quot;post&quot;&gt;"/>
 			<item value="button"/>
 			<item value="h2"/>
-			<item value="container"/>
-			<item value="Doctor Dashboard"/>
-			<item value="top-bar"/>
-			<item value="login-btn"/>
-			<item value="login-container"/>
-			<item value="log"/>
-			<item value="top"/>
-			<item value="strong"/>
-			<item value="&lt;%@ page language=&quot;java&quot; contentType=&quot;text/html; charset=UTF-8&quot; pageEncoding=&quot;UTF-8&quot;%&gt;"/>
-			<item value="creat"/>
 		</list>
 	</section>
 </section>
